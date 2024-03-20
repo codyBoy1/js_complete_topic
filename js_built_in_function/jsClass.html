@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>js02</title>
+  </head>
+  <body>
+    <div class="d-01">
+      <div class="d-02">
+       hi this is div  
+      </div>
+    </div>
+    <script>
+    
+    // API using xhttp
+    const requestUrl = "https://dummyjson.com/users"
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET',requestUrl)
+   xhr.onreadystatechange= function (){
+    //console.log(xhr.readyState)
+    if(xhr.readyState===4){
+    const data =JSON.parse(this.responseText)
+   //console.log(typeof data)
+  // console.log(data.total)
+  for(let i =0;i<20;i++){
+   console.log(data.users[i].id)
+   //console.log(data.users[i].firstName)
+   //console.log(data.users[i].lastName)
+   console.log(data.users[i].email)
+   console.log(data.users[i].address.coordinates.lat)
+   //console.log(data.users[i].hair.type)
+  }
+    }
+    }
+    xhr.send()
+    
+    
+    /*
+    let d01=document.getElementsByClassName("d-01");
+     //d01.classList.remove("d-01");
+   console.log(d01.className)
+      let d02=document.getElementsByClassName("d-02")
+      */
+    </script>
+  </body>
+</html>
