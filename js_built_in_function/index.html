@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>
+      js test 
+    </title>
+  </head>
+  <body>
+    
+<p id="para-01"><sapn>1st span
+</span>
+<h2>hi this is h2</h2>
+</p>
+
+<button onclick="func()">Print</button>
+<script>
+//console.log(window.location);
+
+
+// to check first child 
+// result #text if whitespace and element name if no whitespace
+  const p_01=document.getElementById("para-01");
+  //console.log(p_01.firstChild.nodeName)
+  //console.log(p_01.lastChild.nodeName)
+  
+  
+  // to check if element connected to document or not 
+  let test = document.createElement("p");
+ // console.log(test.isConnected);
+ //to connect element
+ document.body.appendChild(test);
+ //console.log(test.isConnected);
+ 
+ 
+ // Exercise create a h1 tage and insert data through js 
+ let h1=document.createElement("h1")
+ h1.textContent="hi this is h1 tag "
+ // append this to document
+ //console.log(h1.isConnected)
+ document.body.appendChild(h1)
+ //console.log(h1.isConnected)
+ 
+ function func(){
+  // window.print();
+ }
+</script>
+  </body>
+</html>
+  
