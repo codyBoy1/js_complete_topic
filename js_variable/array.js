@@ -60,5 +60,15 @@ const real_array=other_array.flat(Infinity)
 let score1=100;
 let score2=200;
 let score3=300;
-console.log(Array.of(score1,score2,score3))
-console.log(Array.of("score1",score2,score3))
+//console.log(Array.of(score1,score2,score3))
+//console.log(Array.of("score1",score2,score3))
+
+
+// comparison of array data is letter by letter 
+
+// it give false because 23 is less than 89
+
+console.log([23,32]>[89])
+
+// it print true because 9>8
+console.log([9]>[8])
