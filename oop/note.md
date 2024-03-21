@@ -3,7 +3,7 @@
 ## OOP
 ## object 
 
--- collection of properties and method 
+- collection of properties and method 
 -- tolowerCase()
 
 # why use OOP
