@@ -8,17 +8,29 @@
     
 <p id="para-01"><sapn>1st span
 </span>
-<h2>hi this is h2</h2>
+<h2 id="h">hi this is h2</h2>
 </p>
 
 <button onclick="func()">Print</button>
+<button id="btn">click</button>
+
 <script>
 //console.log(window.location);
+const btn =document.getElementById("btn")
+//for(let i=0;i<5;i++){
+ // btn.addEventListener("click",function (){
+ //   console.log("amit",i)
+//  })
+//}
+btn.addEventListener("click",function (){
+  console.log("btn clicked")
+})
 
 
 // to check first child 
 // result #text if whitespace and element name if no whitespace
   const p_01=document.getElementById("para-01");
+  const h=document.getElementById("h");
   //console.log(p_01.firstChild.nodeName)
   //console.log(p_01.lastChild.nodeName)
   
@@ -41,7 +53,29 @@
  
  function func(){
   // window.print();
- }
+  
+  //const data = window.document.doctype
+  
+  //const data = window.document.URL//get url of present working page 
+ 
+ //const data = window.document.location//it provide details about page in object form 
+ 
+  //const data = window.document.location.hostname//it give website hostname 
+  
+ //const data = window.document.location.port//it give page port number 
+ 
+ //const data = window.document.implementation
+ 
+// const data = window.Geolocation()
+//const data = window.MediaKeys
+
+//const data = window.prompt("hello js")//it show pop up message 
+
+
+const data = window.navigator.clipboard
+  console.log(data)
+  console.log(typeof data)
+}
 </script>
   </body>
 </html>
